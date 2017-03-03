@@ -17,6 +17,7 @@ public:
     ~MainWindow();
 signals:
     void value_changed();
+    void value_changed1();
 private slots:
     void setchange1(int value);
     void setchange2(int value);
@@ -32,9 +33,18 @@ private slots:
     void setSchemeA();
     void setSchemeB();
     void setChange();
+    void class_changed(int);
+
+
+    void setchange1C(int value);
+    void setchange2C(int value);
+    void setchangeexam1C(int value);
+    void setchangefinalC(int value);
+    void setchangefinalproject(int value);
+    void setChange1();
 
 private:
-    int hw1,hw2,hw3,hw4,hw5,hw6,hw7,hw8,exam1,exam2,exam3;
+    int hw1,hw2,hw3,hw4,hw5,hw6,hw7,hw8,exam1,exam2,exam3,hw1C,hw2C,exam1C,finalC,finalproject;
     double score;
     int exam;
     bool scheme;
